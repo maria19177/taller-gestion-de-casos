@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Nuevo caso</title> 
+</head> 
+<body> 
+ 
+    <header> 
+        <h1>Sistema de Gestión de Casos</h1> 
+        <p>Registro de solicitudes de servicio técnico</p>     </header> 
+ 
+    <main> 
+        <h2>Registrar nuevo caso</h2> 
+ 
+        <form action="" method="get"> 
+ 
+            <fieldset> 
+                <legend>Datos del cliente</legend> 
+ 
+                <p> 
+                    <label for="nombre">Nombre del cliente:</label><br>                     <input type="text" id="nombre" name="nombre"                            minlength="3" maxlength="80" required> 
+                </p> 
+ 
+                <p> 
+                    <label for="correo">Correo electrónico:</label><br>                     <input type="email" id="correo" name="correo"                            maxlength="100" required>                 </p> 
+ 
+                <p> 
+                    <label for="telefono">Teléfono:</label><br>                     <input type="tel" id="telefono" name="telefono"                            placeholder="+507 6000-0000" maxlength="20"> 
+                </p> 
+            </fieldset> 
+ 
+            <fieldset> 
+                <legend>Datos del equipo</legend> 
+ 
+                <p> 
+                    <label for="categoria">Categoría:</label><br> 
+                    <select id="categoria" name="categoria" required> 
+                        <option value="">Seleccione una opción</option> 
+                        <option value="electrodomestico">Electrodoméstico</option> 
+                        <option value="electronico">Equipo electrónico</option> 
+                        <option value="otro">Otro</option> 
+                    </select> 
+                </p> 
+ 
+                <p> 
+                    <label for="equipo">Producto o equipo:</label><br> 
+                    <input type="text" id="equipo" name="equipo" required> 
+                </p> 
+
+ 
+                <p> 
+                    <label for="modelo">Modelo:</label><br> 
+                    <input type="text" id="modelo" name="modelo" required> 
+                </p> 
+            </fieldset> 
+ 
+            <fieldset> 
+                <legend>Información del caso</legend> 
+ 
+                <p> 
+                    <label for="tipo">Tipo de caso:</label><br> 
+                    <select id="tipo" name="tipo" required> 
+                        <option value="">Seleccione una opción</option> 
+                        <option value="garantia">Garantía</option> 
+                        <option value="reparacion">Reparación</option> 
+                        <option value="consulta">Consulta técnica</option> 
+                        <option value="repuesto">Solicitud de repuesto</option> 
+                    </select> 
+                </p> 
+ 
+                <p> 
+                    <label for="prioridad">Prioridad:</label><br> 
+                    <select id="prioridad" name="prioridad"> 
+                        <option value="baja">Baja</option> 
+                        <option value="media" selected>Media</option> 
+                        <option value="alta">Alta</option> 
+                    </select> 
+                </p> 
+ 
+                <p> 
+                    <label for="asunto">Asunto:</label><br>                     <input type="text" id="asunto" name="asunto"                            minlength="5" maxlength="100" required> 
+                </p> 
+ 
+                <p> 
+                    <label for="descripcion">Descripción del problema:</label><br> 
+                    <textarea id="descripcion" name="descripcion"                               rows="5" cols="40" minlength="15"                               maxlength="700" required></textarea> 
+                </p> 
+ 
+                <p> 
+                    <label for="fecha">Fecha del reporte:</label><br> 
+                    <input type="date" id="fecha" name="fecha" required> 
+                </p> 
+            </fieldset> 
+ 
+            <p> 
+                <input type="checkbox" id="confirmar"                        name="confirmar" required> 
+                <label for="confirmar"> 
+                    Confirmo que los datos son correctos. 
+                </label> 
+            </p> 
+ 
+            <p> 
+                <button type="submit">Registrar caso</button> 
+                <button type="reset">Limpiar</button> 
+            </p> 
+ 
+        </form> 
+    </main> 
+ 
+    <footer> 
+        <p>Sistema de Gestión de Casos | Servicio Técnico</p> 
+    </footer> 
+ 
+</body> 
+</html> 
